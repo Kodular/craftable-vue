@@ -1,8 +1,16 @@
 import type { App } from 'vue'
-import MyComponent from './Component.vue'
+import Blueprint from './components/Blueprint.vue'
+import Canvas from './components/Canvas.vue';
+import Editor from './components/Editor.vue';
+import Frame from './components/Frame.vue';
+import settingMixin from './components/settingMixin';
 
 function install(app: App) {
-	app.component('MyComponent', MyComponent)
+	app.component('Blueprint', Blueprint);
+	app.component('Canvas', Canvas);
+	app.component('Editor', Editor);
+	app.component('Frame', Frame);
+	app.component('settingMixin', settingMixin);
 }
 
-export { MyComponent, install }
+export { install, Blueprint, Canvas, Editor, Frame, settingMixin }

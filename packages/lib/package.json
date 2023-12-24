@@ -35,7 +35,8 @@
 		"test-ci": "vitest --run"
 	},
 	"dependencies": {
-		"@linusborg/lib": "workspace:*"
+		"@linusborg/lib": "workspace:*",
+		"lodash-es": "^4.17.21"
 	},
 	"peerDependencies": {
 		"vue": "^3.0.4"
